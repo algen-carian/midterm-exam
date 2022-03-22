@@ -11,5 +11,6 @@ export class MidtermExamComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  
 
 }
