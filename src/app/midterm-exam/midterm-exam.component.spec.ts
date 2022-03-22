@@ -1,25 +1,15 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { TestBed } from '@angular/core/testing';
+import { ServiceService } from './midterm-exam.service';
 
-import { MidtermExamComponent } from './midterm-exam.component';
-
-describe('MidtermExamComponent', () => {
-  let component: MidtermExamComponent;
-  let fixture: ComponentFixture<MidtermExamComponent>;
-
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      declarations: [ MidtermExamComponent ]
-    })
-    .compileComponents();
-  });
+describe('MidtermService', () => {
+  let service: ServiceService;
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MidtermExamComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+    TestBed.configureTestingModule({});
+    service = TestBed.inject(ServiceService);
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
+  it('should be created', () => {
+    expect(service).toBeTruthy();
   });
 });

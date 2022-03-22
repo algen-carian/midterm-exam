@@ -1,1 +1,19 @@
-<p>midterm-exam works!</p>
+<p>Name: Algen Carian/p>
+
+<table>
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>username</th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let detail of Getdetails">
+        <tr>
+            <td> {{detail.id}} </td>
+            <td> {{detail.name}} </td>
+            <td> {{detail.username}} </td>
+            
+        </tr>
+    </tbody>
+</table>
